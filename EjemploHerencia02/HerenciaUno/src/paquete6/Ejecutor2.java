@@ -46,8 +46,9 @@ public class Ejecutor2 {
                     identificacion,edad,costoCreditos,numerocreditos);
             cadena = String.format("%s\n",EP);
             System.out.println("Desea salir, pulse S");
+              entrada.nextLine();
             String opcion = entrada.nextLine();
-            entrada.nextLine();
+          
             if(opcion.equals("S")){
                 bandera = false;
             }
