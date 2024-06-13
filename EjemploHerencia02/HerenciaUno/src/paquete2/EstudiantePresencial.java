@@ -1,6 +1,7 @@
 
 package paquete2;
-
+// no tenemos un constructor que este esperando los mismo
+// parametros de la super clase
 public class EstudiantePresencial extends Estudiante{
     
     /*1.  Declarar
@@ -10,6 +11,10 @@ public class EstudiantePresencial extends Estudiante{
     private int numeroCreditos;
     private double costoCredito;
     private double matriculaPresencial;
+    /*public EstudiantePresencial(String n, String ap, String iden, int e){
+        // public Estudiante(String n, String a, String iden, int ed){
+        super(n, ap, iden, e); // cumplir con el constructor de la superClase
+    }*/
     
     //  Métodos establecer y calcular para los datos o atributos de la clase
     // 2.  Método establecerNumeroCreditos(numero: Real)

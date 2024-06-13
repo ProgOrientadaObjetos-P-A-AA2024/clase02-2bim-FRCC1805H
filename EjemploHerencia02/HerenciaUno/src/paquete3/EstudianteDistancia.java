@@ -6,7 +6,8 @@ public class EstudianteDistancia extends Estudiante{
     private int numeroAsignaturas;
     private double costoAsignatura;
     private double matriculaDistancia;
-    
+    // el constructor de etsudiante distancia le esta asignando atributos que los 
+    // envia a la super clase
     public EstudianteDistancia(String n, String ap, String iden, int e){
         super(n, ap, iden, e);
     }
@@ -41,5 +42,31 @@ public class EstudianteDistancia extends Estudiante{
     public double obtenerMatriculaDistancia(){
         return matriculaDistancia;
     }
-
+    /* @Override
+    public String toString(){
+        String cadena = String.format("Nombre Estudiante : %s\n"
+                + "Numero de Asignaturas : %d\n"
+                + "Valor de Asignatura : %.2f \n"
+                + "Valor Matricula : %.2f\n",
+                obtenerNombresEstudiante(),
+                numeroAsignaturas,
+                costoAsignatura,
+                obtenerMatriculaDistancia());
+        
+        return cadena;
+    }
+    */
+     @Override
+    public String toString(){
+        String cadena = String.format(" %s\n"
+                + "Numero de Asignaturas : %d\n"
+                + "Valor de Asignatura : %.2f \n"
+                + "Valor Matricula : %.2f\n",
+                super.toString(),
+                numeroAsignaturas,
+                costoAsignatura,
+                obtenerMatriculaDistancia());
+        
+        return cadena;
+    }
 }

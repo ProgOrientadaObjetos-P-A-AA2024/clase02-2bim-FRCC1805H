@@ -1,12 +1,15 @@
 package paquete2;
-
+// no tenemos un constructor que este esperando los mismo
+// parametros de la super clase y necesita 
 public class EstudianteDistancia extends Estudiante{
     
     private int numeroAsignaturas;
     private double costoAsignatura;
     private double matriculaDistancia;
-    
-    
+    /*public EstudianteDistancia(String n, String ap, String iden, int e){
+        super(n, ap, iden, e);
+    }
+    */
     // 2.  Método establecerNumeroAsginaturas(numero: Real)
     public void establecerNumeroAsginaturas(int numero){
         numeroAsignaturas = numero;
