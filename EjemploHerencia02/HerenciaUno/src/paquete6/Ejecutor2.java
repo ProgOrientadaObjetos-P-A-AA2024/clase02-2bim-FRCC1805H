@@ -30,19 +30,21 @@ public class Ejecutor2 {
            
             
             System.out.println("Ingrese el nombre del estudiante");
-            String n = entrada.nextLine();
+            String nombre = entrada.nextLine();
             System.out.println("Ingrese el apellido del estudiante");
-            String a = entrada.nextLine();
+            String apellido = entrada.nextLine();
             System.out.println("Ingrese su numero de cedula ");
-            String i = entrada.nextLine();
+            String identificacion = entrada.nextLine();
             System.out.println("Ingrese su edad ");
-            int ed = entrada.nextInt();
+            int edad = entrada.nextInt();
             System.out.println("Ingrese el numero de creditos ");
-            int nc = entrada.nextInt();
+            int numerocreditos = entrada.nextInt();
             System.out.println("Ingrese el costo de credito ");
-            double c = entrada.nextDouble();
+            double costoCreditos = entrada.nextDouble();
             entrada.nextLine();
-            cadena = String.format("%s\n%s\n%s\n%s\n%d\n%d\n%.2f\n", cadena, n,a,i,ed,nc,c);
+            EstudiantePresencial EP = new EstudiantePresencial(nombre,apellido,
+                    identificacion,edad,costoCreditos,numerocreditos);
+            cadena = String.format("%s\n",EP);
             System.out.println("Desea salir, pulse S");
             String opcion = entrada.nextLine();
             entrada.nextLine();
