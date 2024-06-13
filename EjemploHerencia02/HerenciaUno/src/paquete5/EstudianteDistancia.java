@@ -7,7 +7,8 @@ public class EstudianteDistancia extends Estudiante{
     double costoAsignatura;
     double matriculaDistancia;
     
-        
+    // Este constructor hereda de la super clase y ase quedar valor para si ,mismo 
+    // y este valor sera dado al tipo o nombre de la variable asignada a guardar.
     public EstudianteDistancia(String n, String ap, String iden, int e, 
             int numAsg, double costoAsg){
         super(n, ap, iden, e);
