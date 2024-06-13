@@ -9,9 +9,8 @@ package paquete3;
  *
  * @author reroes
  */
-public class Ejecutor {
+public class Ejecutor3 {
     public static void main(String[] args) {
-        
         
         // Creación de un objeto de tipo EstudianteDistancia
         
