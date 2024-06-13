@@ -44,7 +44,8 @@ public class Ejecutor2 {
 
             EstudiantePresencial EP = new EstudiantePresencial(nombre, apellido,
                     identificacion, edad, costoCreditos, numerocreditos);
-            cadena = String.format("%s\n", EP);
+            EP.calcularMatriculaPresencial();
+            cadena = String.format("%s%s\n",cadena, EP);
             System.out.println("Desea salir, pulse S");
             entrada.nextLine();
             String opcion = entrada.nextLine();
