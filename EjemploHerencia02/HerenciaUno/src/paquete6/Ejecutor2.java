@@ -13,22 +13,22 @@ import java.util.Scanner;
  * @author reroes
  */
 public class Ejecutor2 {
+
     public static void main(String[] args) {
         // Ingresar estudiante de tipo presencial por teclado.
         // El usuario decide cuando terminar
         // No utilizar super.toString en EstudiantePresencial
         // Debe existir 1 sola impresión de todos los estudiantes presenciales
         // No usar arreglos
-        
+
         // Trabajo clases 16 junio 2022
         Scanner entrada = new Scanner(System.in);
-         entrada.useLocale(Locale.US);
+        entrada.useLocale(Locale.US);
         boolean bandera = true;
         String cadena = "";
-        
-        while(bandera){
-           
-            
+
+        while (bandera) {
+
             System.out.println("Ingrese el nombre del estudiante");
             String nombre = entrada.nextLine();
             System.out.println("Ingrese el apellido del estudiante");
@@ -41,25 +41,20 @@ public class Ejecutor2 {
             int numerocreditos = entrada.nextInt();
             System.out.println("Ingrese el costo de credito ");
             double costoCreditos = entrada.nextDouble();
-            entrada.nextLine();
-            EstudiantePresencial EP = new EstudiantePresencial(nombre,apellido,
-                    identificacion,edad,costoCreditos,numerocreditos);
-            cadena = String.format("%s\n",EP);
+
+            EstudiantePresencial EP = new EstudiantePresencial(nombre, apellido,
+                    identificacion, edad, costoCreditos, numerocreditos);
+            cadena = String.format("%s\n", EP);
             System.out.println("Desea salir, pulse S");
-              entrada.nextLine();
+            entrada.nextLine();
             String opcion = entrada.nextLine();
-          
-            if(opcion.equals("S")){
+
+            if (opcion.equals("S")) {
                 bandera = false;
             }
         }
-        
-         System.out.printf("%s\n", cadena);
-        
-        
+
+        System.out.printf("%s\n", cadena);
+
     }
 }
-
-
-
-
